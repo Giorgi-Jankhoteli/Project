@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(53, 48, 48);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+main{
+    height: auto;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    box-shadow: 0px 0px 10px black;
+    width: 100%;
+}
+.header_parent_div{
+    
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    width: 500px;
+    display: flex;
+
+   
+}
+ul{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    font-size: 15px;
+    font-family: "Inter", serif;
+}
+.first_logo{
+    width: 40px;
+    height: 40px;
+}
+span{
+    display: none !important;
+}
+
+
+iframe{
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+   
+}
+
+footer{
+    height: 80px;
+    background-color: rgb(110, 110, 110);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-shadow: 0px 0px 10px black;
+}
+.icones{
+    display: flex;
+    flex-direction: column;
+}
+.icones img{
+    width: 30px;
+}
+.footer_p{
+    width: 100px;
+    font-size: 10px;
+}
+.ll{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer_logo{
+    width: 70px;
+    height: 70px;
+}
+.parent_div{
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    
+}
+.img_div{
+    
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+
+}
+
+h3{
+    text-align: center;
+}
+.artists_img{
+    width: 100px;
+    height: 130px;
+    box-shadow: 0px 0px 10px rgb(22, 18, 18);
+
+}
+.img_parent_div{
+    display: flex;
+    
+    
+
+
+
+}
+.photo{
+    width: 300px;
+    height: 320px
+}
+.img_parent_div2{
+    display: none ;
+    
+}
+.artists2{
+    display: none;
+    font-family: "Inter", serif;
+
+}
+.name{
+    color: rgb(209, 209, 209);
+    text-shadow: 0px 0px 2px gray;
+    font-family: "Inter", serif;
+}
+.description{
+    color: rgb(209, 209, 209);
+    text-shadow: 0px 0px 2px gray;
+    margin-top: 10px;
+}
+.artists{
+    color: rgb(209, 209, 209);
+    text-shadow: 0px 0px 2px gray;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: "Inter", serif;
+}
+h3{
+    color: rgb(209, 209, 209);
+    text-shadow: 0px 0px 2px gray;
+    font-family: "Inter", serif;
+}
+
+@media (max-width: 400px){
+    span{
+        display: block !important;
+        
+    }
+    ul{
+        display: none;
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+        
+        
+        
+        padding-right: 0px;
+    }
+    
+   
+    footer{
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+    }
+    .footer_logo{
+        width: 50px;
+        height: 50px;
+    }
+    iframe{
+        height: 300px;
+    }
+    
+    
+    
+    
+}
+@media (max-width: 800px){
+    .img_parent_div{
+        display: none ;
+        
+    }
+    .img_parent_div2{
+        display: block ;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        
+        align-items: center;
+        justify-items: center;
+        
+        margin-bottom: 30px;
+    }
+    .artists{
+        display: none;
+    }
+    .artists2{
+        display: block;
+        align-self: self-start;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        color: rgb(209, 209, 209);
+        text-shadow: 0px 0px 2px gray;
+        
+
+
+    }
+    main{
+        height: auto;
+    }
+    .img_div{
+        align-items: center;
+        justify-content: flex-end;
+        justify-content: center;
+        height: 170px;
+        justify-content: space-between;
+        
+    }
+    
+    
+}
+@media (max-width: 590px){
+    .parent_div{
+        flex-direction: column;
+
+    }
+    .photo{
+        align-self: center;
+        width: 80%;
+        height: 60%;
+    }
+    .img_parent_div2{
+        gap: 20px;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .img_div{
+        width: 100%;
+        
+        
+    }
+    .artists_img{
+        width: 140px;
+        height: 150px;
+
+    }
+}
